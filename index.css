@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  color: #1c1b20;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
+.action-bar {
+  background-color: #fff;
+  width: 15vh;
+  border-right: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+  padding-top: 20px;
+}
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  padding: 80px 0px;
+}
+.actions .far,
+.actions .fas {
+  padding: 25px 0px;
+  display: block;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.actions .far:hover,
+.actions .fas:hover,
+.user-profile:hover  {
+  background-color: #eae8ec;
+}
+.user-profile {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2rem;
+  height: 50px;
+  padding-top: 20px;
+  padding-bottom: 15px;
+}
+.message-activity {
+  background-color: #fff;
+  width: 60vh;
+  height: 100vh;
+}
+
+.message-activity-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 25px;
+}
+
+.pinned-section h2 {
+  padding: 5px 25px;
+  font-size: 1rem;
+  color: #333;
+}
+.pinned-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 18px 15px;
+}
+.pinned-card:hover {
+  background-color: #eae8ec;
+}
+.pinned-card .far {
+  font-size: 3rem;
+  padding-right: 15px;
+}
+.extra-info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+#james-time {
+  padding: 0px 5px 0px 13px;
+}
+.user-name {
+  font-weight: bolder;
+}
+#special-text {
+  color: #333;
+}
+.user-message-info {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+.user-header-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 18px 15px;
+  margin: 0px 75px;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+.user-info-header .fa-user-circle {
+  font-size: 3rem;
+  padding-right: 15px;
+}
+.user-info-header .fa-elipsis-h {
+  font-size: 2rem;
+}
+.user-message-option .fa-ellipsis-v {
+  font-size: 1.4rem;
+}
+.date {
+  text-align: center;
+  color: #333;
+  padding: 30px 0px;
+}
+.messages {
+  background-color: #fdfcff;
+  width: 149vh;
+  padding-bottom: 60px;
+  
+}
+.user-messages {
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+.y-m-c {
+  height: 85px;
+}
+.your-message {
+  padding: 25px;
+  background: linear-gradient(to right, #16a16e, #32a564, #84ad41);
+  width: max-content;
+  align-self: flex-end;
+  float: right;
+  border-radius: 55px 55px 0px 55px;
+  margin-top: 20px;
+  margin-right: 75px;
+}
+#their-message-1 {
+  padding: 25px;
+  background-color: #e9ecf3;
+  width: max-content;
+  margin-top: 20px;
+  border-radius: 55px 55px 55px 0px;
+  margin-left: 75px;
+}
+.type-message {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 58vw;
+    height: 50px;
+    border-top: 1px solid #f3f2f5;
+    background: #fdfcff;
+    padding-left: 15px;
+    padding: 0px 75px;
+    font-size: 1.2rem;
+}
+#message-prompt {
+    position: fixed;
+    margin-left: 49px;
+    height: 47px;
+    width: 47.6vw;
+    overflow-wrap: break-word;
+    white-space: initial;
+    border: 0;
+    outline: none;
+    background: #fdfcff;
+}
+.fa-microphone {
+    padding: 0px 10px;
+    height: auto;
+    width: auto;
+    display: block;
+}
+.fa-paperclip {
+    padding: 0px 10px;
+}
+button {
+    background: #fdfcff;
+    padding: 10px;
+    border: none;
+    font-size: 1.5rem;
+    display: block;
+
+}
+button:hover, .fa-microphone:hover, .fa-paperclip:hover {
+    background: #eae8ec;
+}
