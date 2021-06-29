@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/afd8c4ca6b.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="action-bar">
+      <div class="logo">
+        <i class="far fa-circle"></i>
+      </div>
+      <div class="actions">
+        <i class="fas fa-wave-square"></i>
+        <i class="far fa-clock"></i>
+        <i class="far fa-calendar"></i>
+        <i class="far fa-comment"></i>
+      </div>
+      <div class="user-profile" id="user-profile">
+        <i class="far fa-user-circle" id="profile-picture"></i>
+      </div>
+    </div>
+    <div class="message-activity">
+      <section>
+        <div class="message-activity-header">
+          <h2>Chats</h2>
+          <i class="fas fa-ellipsis-v"></i>
+        </div>
+        <div class="pinned-section">
+          <h2>Pinned</h2>
+          <div class="pinned-cards">
+            <div class="pinned-card">
+              <i class="far fa-user-circle"></i>
+              <div class="extra-info">
+                <div class="user-info">
+                  <p class="user-name">Megan Ridge</p>
+                  <p>Sent a file</p>
+                </div>
+                <p class="time-ago">
+                  3m
+                </p>
+              </div>
+            </div>
+            <div class="pinned-card active-card">
+              <i class="far fa-user-circle"></i>
+              <div class="extra-info">
+                <div class="user-info">
+                  <p class="user-name">Ryan James</p>
+                  <p>Thanks! How that meeting went?</p>
+                </div>
+                <p class="time-ago">
+                  1h
+                </p>
+              </div>
+            </div>
+            <div class="pinned-card">
+              <i class="far fa-user-circle"></i>
+              <div class="user-info">
+                <p class="user-name">Jared Wesley</p>
+                <p><span id="special-text">You: </span>Got it, I'll let you know, no worries</p>
+              </div>
+              <p class="time-ago" id="james-time">
+                1h
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="message-contacts"></div>
+      </section>
+    </div>
+    <div class="messages">
+      <div class="user-header">
+        <div class="user-info-header">
+          <i class="far fa-user-circle"></i>
+
+          <div class="user-header-info">
+            <div class="user-message-info">
+              <p class="user-name">Jared Wesley</p>
+              <p><i class="fas fa-ellipsis-h"></i> typing</p>
+            </div>
+            <div class="user-message-option">
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
+          </div>
+        </div>
+        <div class="date">
+          <p>
+            Today, 12 April
+          </p>
+        </div>
+        <div class="user-messages" id="user-messages">
+
+
+          <div class="y-m-c">
+            <div class="your-message">
+              <p>
+                Hey! I am going to start a book club channel, how that sounds?
+              </p>
+
+            </div>
+          </div>
+          <div id="their-message-1">
+            <p>
+              Hello! great, I love the idea!
+            </p>
+          </div>
+          <div id="their-message-1">
+            <p>
+              Sure, I'll add you shortly.
+            </p>
+          </div>
+          <div class="y-m-c">
+            <div class="your-message">
+              <p>
+                Hey! I am going to start a book club channel, how that sounds?
+              </p>
+
+            </div>
+          </div>
+          
+          
+        </div>
+        <div class="type-message">
+          <div class="test-div">
+            <i class="fas fa-paperclip"></i>
+            <textarea id="message-prompt" placeholder="Write a message..."></textarea>
+            <i class="fas fa-microphone" id="microphone"></i>
+          </div>
+          <button onclick="getText()"><i class="fas fa-arrow-circle-up"></i></button>
+
+        </div>
+      </div>
+      
+      <script src="index.js"></script>
+      </script>
+</body>
+
+</html>
