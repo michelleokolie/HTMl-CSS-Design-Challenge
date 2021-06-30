@@ -20,6 +20,10 @@ let getText = () => {
         alert("Please write a message");
     }
 
-
 }
+let activeUser = () => {
+    card = document.getElementsByClassName("pinned-card");
+    card.addClassList("active");
+} 
+
 
