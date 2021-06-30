@@ -75,74 +75,104 @@
         </div>
       </section>
       <section>
-        <div class="message-contacts"></div>
-      </section>
+        <div class="message-contacts">
+          <div class="contact-section">
+            <h2>All Contacts</h2>
+            <div class="contact-cards" id="contact-cards">
+              <div class="contact-card">
+                <i class="far fa-user-circle"></i>
+                <div class="extra-info">
+                  <div class="user-info">
+                    <p class="user-name">Sam Norton</p>
+                    <p>Haha, Yeah, sounds good! Thanks so much</p>
+                  </div>
+                  <p class="time-ago">
+                    1d
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="contact-card">
+              <i class="far fa-user-circle"></i>
+              <div class="extra-info">
+                <div class="user-info">
+                  <p class="user-name">Alicia Wu</p>
+                  <p>Sure, that's completely fine. Don't forget to sign up</p>
+                </div>
+                <p class="time-ago">
+                  1d
+                </p>
+              
+          </div>
+        </div>
     </div>
-    <div class="messages">
-      <div class="user-header">
-        <div class="user-info-header">
-          <i class="far fa-user-circle"></i>
+    </section>
+  </div>
+  <div class="messages">
+    <div class="user-header">
+      <div class="user-info-header">
+        <i class="far fa-user-circle"></i>
 
-          <div class="user-header-info">
-            <div class="user-message-info">
-              <p class="user-name">Jared Wesley</p>
-              <p><i class="fas fa-ellipsis-h"></i> typing</p>
-            </div>
-            <div class="user-message-option">
-              <i class="fas fa-ellipsis-v"></i>
-            </div>
+        <div class="user-header-info">
+          <div class="user-message-info">
+            <p class="user-name">Jared Wesley</p>
+            <p><i class="fas fa-ellipsis-h"></i> typing</p>
           </div>
-        </div>
-        <div class="date">
-          <p>
-            Today, 12 April
-          </p>
-        </div>
-        <div class="user-messages" id="user-messages">
-
-
-          <div class="y-m-c">
-            <div class="your-message">
-              <p>
-                Hey! I am going to start a book club channel, how that sounds?
-              </p>
-
-            </div>
+          <div class="user-message-option">
+            <i class="fas fa-ellipsis-v"></i>
           </div>
-          <div id="their-message-1">
-            <p>
-              Hello! great, I love the idea!
-            </p>
-          </div>
-          <div id="their-message-1">
-            <p>
-              Sure, I'll add you shortly.
-            </p>
-          </div>
-          <div class="y-m-c">
-            <div class="your-message">
-              <p>
-                Hey! I am going to start a book club channel, how that sounds?
-              </p>
-
-            </div>
-          </div>
-          
-          
-        </div>
-        <div class="type-message">
-          <div class="test-div">
-            <i class="fas fa-paperclip"></i>
-            <textarea id="message-prompt" placeholder="Write a message..."></textarea>
-            <i class="fas fa-microphone" id="microphone"></i>
-          </div>
-          <button onclick="getText()"><i class="fas fa-arrow-circle-up"></i></button>
-
         </div>
       </div>
-      
-      <script src="script.js"></script>
-      </script>
+      <div class="date">
+        <p>
+          Today, 12 April
+        </p>
+      </div>
+      <div class="user-messages" id="user-messages">
+
+
+        <div class="y-m-c">
+          <div class="your-message">
+            <p>
+              Hey! I am going to start a book club channel, how that sounds?
+            </p>
+
+          </div>
+        </div>
+        <div id="their-message-1">
+          <p>
+            Hello! great, I love the idea!
+          </p>
+        </div>
+        <div id="their-message-1">
+          <p>
+            Sure, I'll add you shortly.
+          </p>
+        </div>
+        <div class="y-m-c">
+          <div class="your-message">
+            <p>
+              Hey! I am going to start a book club channel, how that sounds?
+            </p>
+
+          </div>
+        </div>
+
+
+      </div>
+      <div class="type-message">
+        <div class="test-div">
+          <i class="fas fa-paperclip"></i>
+          <textarea id="message-prompt" placeholder="Write a message..."></textarea>
+          <i class="fas fa-microphone" id="microphone"></i>
+        </div>
+        <button onclick="getText()"><i class="fas fa-arrow-circle-up"></i></button>
+
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    </script>
 </body>
 
 </html>
