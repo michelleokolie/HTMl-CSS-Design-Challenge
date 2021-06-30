@@ -86,10 +86,12 @@
   border-top: 1px solid black;
     margin: 0px 10px;
     box-shadow: 0px 10px 13px black;
+    margin-bottom: 5px;
 }
 .pinned-card:hover {
   background-color: #eae8ec;
 }
+
 .pinned-card .far {
   font-size: 3rem;
   padding-right: 15px;
