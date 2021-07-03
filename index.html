@@ -37,11 +37,13 @@
         <div class="pinned-section">
           <h2>Pinned</h2>
           <div class="pinned-cards" id="pinned-cards">
-            <div class="pinned-card">
-              <i class="far fa-user-circle"></i>
+            
+            <div class="pinned-card" id="leo" onclick="showLeo()">
+              <img class="profile-pic"
+                src="https://images.squarespace-cdn.com/content/v1/5e8d53b5cb496d1636d3b917/1614548192359-7NJXMTZAC8E0GF03KXF0/LeoTian.jpg?format=300w">
               <div class="extra-info">
                 <div class="user-info">
-                  <p class="user-name">Megan Ridge</p>
+                  <p class="user-name">Leo Tian</p>
                   <p>Sent a file</p>
                 </div>
                 <p class="time-ago">
@@ -49,11 +51,12 @@
                 </p>
               </div>
             </div>
-            <div class="pinned-card active">
-              <i class="far fa-user-circle"></i>
+
+            <div class="pinned-card active" id="louis" onclick="showLouis()">
+              <img class="profile-pic" src="https://images.squarespace-cdn.com/content/v1/5e8d53b5cb496d1636d3b917/1586321822023-P4L0H6LE3EE7L95DQQNJ/louis.jpg?format=500w" alt="">
               <div class="extra-info">
                 <div class="user-info">
-                  <p class="user-name">Ryan James</p>
+                  <p class="user-name">Louis Friedland-Yust</p>
                   <p>Thanks! How that meeting went?</p>
                 </div>
                 <p class="time-ago">
@@ -61,10 +64,11 @@
                 </p>
               </div>
             </div>
-            <div class="pinned-card">
-              <i class="far fa-user-circle"></i>
+
+            <div class="pinned-card" id="emily" onclick="showEmily()">
+              <img class="profile-pic" src="https://cdn.discordapp.com/attachments/692133317948211280/860943100562505748/itperson.png" alt="">
               <div class="user-info">
-                <p class="user-name">Jared Wesley</p>
+                <p class="user-name">Emily Chiu</p>
                 <p><span id="special-text">You: </span>Got it, I'll let you know, no worries</p>
               </div>
               <p class="time-ago" id="james-time">
@@ -102,77 +106,138 @@
                 <p class="time-ago">
                   1d
                 </p>
-              
+
+              </div>
+            </div>
+          </div>
+      </section>
+    </div>
+    <div class="messages">
+      <div class="user-header">
+        <div class="user-info-header">
+          <i class="far fa-user-circle"></i>
+
+          <div class="user-header-info">
+            <div class="user-message-info">
+              <p id="user-name">Louis Friedland-Yust</p>
+              <p><i class="fas fa-ellipsis-h"></i> typing</p>
+            </div>
+            <div class="user-message-option">
+              <i class="fas fa-ellipsis-v"></i>
+            </div>
           </div>
         </div>
-    </div>
-    </section>
-  </div>
-  <div class="messages">
-    <div class="user-header">
-      <div class="user-info-header">
-        <i class="far fa-user-circle"></i>
+        <div class="date">
+          <p>
+            Today, 12 April
+          </p>
+        </div>
+        <!-- Emily's Messages-->
+        <div class="user-messages" id="emily-messages">
+        
+          <div class="your-message" id="your-message">
+            <p>
+              Hey. I still have no idea
+            </p>
+        
+        </div>
+        <div class="their-message">
+          <p>
+            Learning Powershell isn't that hard
+          </p>
+        </div>
+        <div class="their-message">
+          All you need to do is type PWD
+          </div>
+        <!-- Emily's typing box-->
+        <div class="type-message" id="emily-type">
+          <div class="test-div">
+            <i class="fas fa-paperclip" onclick="message()"></i>
+            <textarea id="emily-prompt" placeholder="Write a message..."></textarea>
+            <i class="fas fa-microphone" id="microphone" onclick="message()"></i>
+          </div>
+          <button onclick="getEmilyText()"><i class="fas fa-arrow-circle-up"></i></button>
+  
+        </div>
+      
+        </div>
+        <!-- Leo's premade messages -->
+        <div class="user-messages" id="leo-messages">
+        
+          <div class="your-message" id="your-message">
+            <p>
+              Hey. Have you seen it?
+            </p>
+        
+        </div>
+        <div class="their-message">
+          <p>
+            Yup. I'll show you.
+          </p>
+        </div>
+        <div class="their-message">
+          <img src="https://media.discordapp.net/attachments/853789148870868994/858180645259182080/unknown.png" alt="">
+        </div>
+        <!-- Leo's typing box-->
+        <div class="type-message" id="leo-type">
+          <div class="test-div">
+            <i class="fas fa-paperclip" onclick="message()"></i>
+            <textarea id="leo-prompt" placeholder="Write a message..."></textarea>
+            <i class="fas fa-microphone" id="microphone" onclick="message()"></i>
+          </div>
+          <button onclick="getLeoText()"><i class="fas fa-arrow-circle-up"></i></button>
 
-        <div class="user-header-info">
-          <div class="user-message-info">
-            <p id="user-name">Jared Wesley</p>
-            <p><i class="fas fa-ellipsis-h"></i> typing</p>
-          </div>
-          <div class="user-message-option">
-            <i class="fas fa-ellipsis-v"></i>
-          </div>
+        </div>
+      
         </div>
       </div>
-      <div class="date">
+
+      <!-- Louis' premade messages-->
+      <div class="user-messages" id="louis-messages">
+        
+        <div class="your-message" id="your-message">
+          <p>
+            Hey! I am going to start a book club channel, how that sounds?
+          </p>
+      
+      </div>
+      <div class="their-message">
         <p>
-          Today, 12 April
+          Hello! great, I love the classes!
         </p>
       </div>
-      <div class="user-messages" id="user-messages">
-
-
-        <div class="y-m-c">
-          <div class="your-message">
-            <p>
-              Hey! I am going to start a book club channel, how that sounds?
-            </p>
-
-          </div>
-        </div>
-        <div id="their-message-1">
-          <p>
-            Hello! great, I love the idea!
-          </p>
-        </div>
-        <div id="their-message-1">
-          <p>
-            Sure, I'll add you shortly.
-          </p>
-        </div>
-        <div class="y-m-c">
-          <div class="your-message">
-            <p>
-              Hey! I am going to start a book club channel, how that sounds?
-            </p>
-
-          </div>
-        </div>
-
-
+      <div class="their-message">
+        <p>
+          Sure, I'll add you shortly.
+        </p>
       </div>
-      <div class="type-message">
-        <div class="test-div">
-          <i class="fas fa-paperclip"></i>
-          <textarea id="message-prompt" placeholder="Write a message..."></textarea>
-          <i class="fas fa-microphone" id="microphone"></i>
-        </div>
-        <button onclick="getText()"><i class="fas fa-arrow-circle-up"></i></button>
-
+      
+        <div class="your-message">
+          <p>
+            Hey! I am going to start a book club channel, how that sounds?
+          </p>
+    
       </div>
     </div>
 
-    <script src="script.js"></script>
-    </script>
+      
+    <div class="type-message" id="louis-type">
+      <div class="test-div">
+        <i class="fas fa-paperclip" onclick="message()"></i>
+        <textarea id="louis-prompt" placeholder="Write message..."></textarea>
+        <i class="fas fa-microphone" id="microphone" onclick="message()"></i>
+      </div>
+      <button onclick="getLouisText()"><i class="fas fa-arrow-circle-up"></i></button>
+
+    </div>
+  </div>
+      
+    </div>
+
+        
+
+      <script src="script.js"></script>
+      </script>
 </body>
 
 </html>

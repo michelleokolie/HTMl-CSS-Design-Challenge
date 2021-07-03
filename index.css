@@ -97,6 +97,14 @@
   font-size: 3rem;
   padding-right: 15px;
 }
+
+.profile-pic {
+  height: 50px;
+  width: 80px;
+  padding: 0px 10px;
+  border-radius: 50%;
+}
+
 .extra-info {
   display: flex;
   flex-direction: row;
@@ -163,8 +171,17 @@
   flex-direction: column;
   overflow-y: hidden;
 }
-.y-m-c {
-  height: 85px;
+#leo-messages {
+  display: none;
+}
+#leo-type {
+  display: none;
+}
+#emily-messages {
+  display: none;
+}
+#emily-type {
+  display: none;
 }
 .your-message {
   padding: 25px;
@@ -176,7 +193,7 @@
   margin-top: 20px;
   margin-right: 75px;
 }
-#their-message-1 {
+.their-message {
   padding: 25px;
   background-color: #e9ecf3;
   width: max-content;
@@ -198,7 +215,7 @@
     padding: 0px 75px;
     font-size: 1.2rem;
 }
-#message-prompt {
+#emily-prompt, #louis-prompt, #leo-prompt {
     position: fixed;
     margin-left: 49px;
     height: 47px;
