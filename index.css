@@ -145,6 +145,12 @@
   align-items: center;
   border-bottom: 1px solid #333;
 }
+#header-pic {
+  height: 75px;
+  width: 90px;
+  padding: 0px 10px;
+  border-radius: 50%;
+}
 .user-info-header .fa-user-circle {
   font-size: 3rem;
   padding-right: 15px;

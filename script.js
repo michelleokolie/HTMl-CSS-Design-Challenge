@@ -63,7 +63,9 @@ let getEmilyText = () => {
 
 let card = document.getElementsByClassName("pinned-card");
 let currentUser = document.getElementById("user-name");
-
+let currentProfilePicture = document.getElementById("header-pic");
+let profilePicture =  document.getElementsByClassName("profile-pic")
+/* Find the active card and apply styles */
 for (let i = 0; i < card.length; i++) {
     card[i].addEventListener("click", function () {
         let current = document.getElementsByClassName("active");
@@ -71,7 +73,7 @@ for (let i = 0; i < card.length; i++) {
         this.className += " active";
 
         currentUser.innerHTML = document.getElementsByClassName("active")[0].querySelector("p.user-name").innerText;
-
+        currentProfilePicture.src = document.getElementsByClassName("active")[0].querySelector("img").src;
         
     }
     )
